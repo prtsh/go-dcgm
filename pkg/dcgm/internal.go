@@ -77,7 +77,7 @@ func InjectFieldValue(gpu uint, fieldID uint, fieldType uint, status int, ts int
 		fieldId:   C.ushort(fieldID),
 		fieldType: C.ushort(fieldType),
 		status:    C.int(status),
-		ts:        C.long(ts),
+		ts:        C.uint64_t(ts),
 	}
 
 	switch fieldType {
